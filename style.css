@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}    
+
+@font-face {
+    font-family: arthur;
+    src: url(/fonte/bulletproof/Bulletproof.ttf);
+}
+
+@font-face {
+    font-family: dias;
+    src: url(/fonte/bulletproof/Bulletproof\ Italic.ttf)
+}
+@font-face {
+    font-family: diaz;
+    src: url(/fonte/pervitina_dex/Pervitina-Dex-FFP.ttf)
+}
+
+
+
+body{
+    background-image: url(https://www.gfinfo.com.br/wp-content/uploads/2023/06/principais-linguagens-de-programacao.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/*--------------TÍTULO----------------*/
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    width: 100%;
+}
+
+.main-header h1{
+    
+    color: #fff;
+    font-family: 'Bitter', serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 0;
+    width: 0;
+    margin-left: -170px;
+    margin-top: 80px;
+    
+
+
+  
+}
+
+/*------------------------------------------*/
+
+img {
+    width: 100px;
+    position: absolute;
+    bottom: 5px;
+    animation-name: movimentar;
+    animation-duration: 5s;
+    animation-timing-function:cubic-bezier(.56,1.22,1,.36);
+    animation-delay: 1.5s;
+    animation-iteration-count:2 lo;
+    animation-direction: alternate-reverse;
+    animation-fill-mode:forwards ;
+    animation-play-state: running;
+    /* animation: movimentar 10s ease alternate-reverse; */
+    margin-bottom: 350px;
+
+}
+
+fieldset{
+    margin: 150px;
+    background-color: black;
+    /* background-image: url(https://img.imageboss.me/revista-cdn/cdn/18120/bb3d5a2fda64ad524821a93b817d99aa9ceaf50a.jpg?1555424254);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+input{
+    font-family: 'Bitter', serif;
+    /* margin-left: 610px; */
+    color: rgb(87, 5, 5);
+    background-color: aqua;
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+
+    margin: 150px 0 40px 0;
+    
+}
+
+p{
+    color: rgb(254, 254, 255);
+    font-size: 1.9em;
+    font-family: dias;
+
+}
+
+.messi{
+    padding: 3px;
+    text-align: center;
+    font-family: arthur;
+
+}
+
+iframe{
+    margin-bottom: 100px;
+}
+
+footer{
+    letter-spacing: 0.4em;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer cite{
+    font-size: 2em;
+    color: aliceblue;
+    font-family: diaz;
+    
+}
+
+.ml{
+    padding: 3px;
+    text-align: center;
+    font-family: arthur;
+
+}
+
+.enthony{
+    padding: 3px;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: dias;
+
+}
+.rodrygo{
+    padding: 3px;
+    text-align: center;
+    font-family: arthur;
+
+}
+.kewin{
+    padding: 3px;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: dias;
+
+}
+
+img:hover{
+    animation-play-state: paused;
+
+}
+
+@keyframes movimentar {
+    from {
+        transform: translateX(0);
+    }
+    
+
+    to {
+        transform: translateX(calc(100vw - 200px));
+    }
+}
+
